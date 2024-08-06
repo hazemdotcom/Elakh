@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+ body {
+     font-family: 'Poppins', sans-serif;
+    /* Apply Poppins font to the body */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     background-image: linear-gradient(-45deg, #03173a 0%, #04befe 100%);
+}
+ .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border: 2px solid #fff;
+     border-radius: 20px;
+     padding: 20px;
+     height: 280px 
+    /* Adjust as needed */
+}
+ .sign-in-form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    /* Center child elements vertically */
+     padding: 20px;
+     border-radius: 5px;
+     height: 100%;
+    /* Make it fill the available space of its parent */
+}
+ .title {
+     margin-bottom: 1rem;
+     font-size: 2.2rem;
+     color: #fff;
+     margin-bottom: 10px;
+     font-family: 'Poppins', sans-serif;
+    /* Apply Poppins font to the title */
+}
+ .input-field {
+     max-width: 380px;
+     width: 100%;
+     background-color: #f0f0f0;
+     margin: 10px 0;
+    /* Adjusted margin */
+     height: 55px;
+     border-radius: 55px;
+     display: flex;
+     padding: 0 0.4rem;
+     position: relative;
+}
+ .input-field i {
+     text-align: center;
+     line-height: 55px;
+     color: #acacac;
+     transition: 0.5s;
+     font-size: 1.1rem;
+     margin-left: 15px;
+     margin-right: 15px;
+}
+ .input-field input {
+     background: none;
+     outline: none;
+     border: none;
+     line-height: 1;
+     font-weight: 600;
+     font-size: 1.1rem;
+     color: #333;
+}
+ .input-field input::placeholder {
+     color: #aaa;
+     font-weight: 500;
+}
+ .btn {
+     width: 150px;
+     background-color: #444;
+     border: none;
+     outline: none;
+     height: 49px;
+     border-radius: 49px;
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: 600;
+     margin: 10px 0;
+     cursor: pointer;
+    /* transition: 0.5s;
+     */
+     margin-left: 75px;
+}
+ .btn:hover {
+     background-color: #333;
+}
+ 

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Character encoding -->
+      <meta charset="UTF-8">
+      <!-- Viewport settings for responsive design -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Title of the page -->
+      <title>Elakh</title>
+      <!-- Include Normalize.css for cross-browser consistency -->
+      <link rel="stylesheet" href="/css/normalize.css">
+      <!-- Include Font Awesome CSS for icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Include custom CSS files for styling -->
+      <link rel="stylesheet" href="/css/main.css">
+      <!-- Include Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik:wght@300;400;500;600;700;800;900&family=Ubuntu&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Main container -->
+      <div class="page">
+         <!-- Start of Header -->
+         <div class="head">
+            <!-- Logo -->
+            <div class="logo">
+               <img src="/images/logo.png" alt="logo">
+            </div>
+            <!-- Home Navigation -->
+            <div class="home">
+               <div>
+                  <i class=" home-icon fa-solid fa-house"></i>
+                  <span>الرئيسية</span>
+               </div>
+               <div>
+                  <i class="arrow-down fa-solid fa-angle-down"></i>
+               </div>
+            </div>
+            <!-- Search Bar -->
+            <div class="search">
+               <input type="search" placeholder="ابحث الخ">
+            </div>
+            <!-- Icons Section -->
+            <div class="icons">
+               <i class="fa-solid fa-fire"></i>
+               <i class="fa-regular fa-comment-dots"></i>
+               <i class="fa-regular fa-bell"></i>
+               <i class="fa-solid fa-plus"></i>
+            </div>
+            <!-- Advertise Section -->
+            <div class="advertise">
+               <i class="fa-solid fa-bullhorn"></i>
+               <span>اعلان</span>
+            </div>
+            <!-- User Profile Section -->
+            <a href="user.html" target="_blank" style="text-decoration: none;">
+               <div class="profile">
+                  <div class="profile-img">
+                     <img src="/images/avatar.png" alt="profile">
+                  </div>
+                  <div class="profile-info">
+                     <h4 id="user-name">حازم بكر</h4>
+                     <p>المستوي الأول</p>
+                  </div>
+               </div>
+            </a>
+         </div>
+         <!-- End of Header -->
+         <div class="content">
+            <div class="main">
+               <!-- Post Box for Writing Posts -->
+               <div class="post-box">
+                  <img src="/images/avatar.png" alt="">
+                  <div class="write-post">
+                     <textarea name="" id="" placeholder="كتابة منشور"></textarea>
+                  </div>
+                  <div class="icons">
+                     <i class="fa-regular fa-image"></i>
+                     <i class="fa-solid fa-link"></i>
+                  </div>
+               </div>
+               <!-- Sort Posts Section -->
+               <div class="sort-posts">
+                  <div class="best">
+                     <i class="fa-brands fa-space-awesome"></i>
+                     <span>الأفضل</span>
+                  </div>
+                  <div class="hot">
+                     <i class="fa-solid fa-ranking-star"></i>
+                     <span>شيق</span>
+                  </div>
+                  <div class="new">
+                     <i class="fa-regular fa-lightbulb"></i>
+                     <span>جديد</span>
+                  </div>
+                  <div class="hot-two">
+                     <i class="fa-solid fa-ranking-star"></i>
+                     <span>شيق</span>
+                  </div>
+                  <div class="more">
+                     <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="icons">
+                     <i class="fa-regular fa-eye"></i>
+                     <i class="arrow-down fa-solid fa-angle-down"></i>
+                  </div>
+               </div>
+               <!-- Individual Posts -->
+               <div class="post">
+                  <!-- User Information -->
+                  <div class="user-info">
+                     <img src="/images/avatar.png" alt="">
+                     <div class="text-info">
+                        <h4 class="name">يوسف علي</h4>
+                        |
+                        <h4 class="posted-by">
+                        <span>نشر بواسطة</span> ايجبت نيوز
+                        <h4 class="date">منذ يوم</h4>
+                     </div>
+                  </div>
+                  <!-- Post Content -->
+                  <div class="post-content">
+                     <p>اكتشافات جديدة تكشف اسرارا مذهلة عن اهرامات الجيزة .</p>
+                     <img src="/images/pyramids.jpg" alt="">
+                  </div>
+                  <!-- Post Actions -->
+                  <div class="actions">
+                     <div class="comments">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <h4>تعليقات</h4>
+                     </div>
+                     <div class="awards">
+                        <i class="fa-solid fa-award"></i>
+                        <h4>جوائز</h4>
+                     </div>
+                     <div class="share">
+                        <i class="fa-solid fa-retweet"></i>
+                        <h4>نشر</h4>
+                     </div>
+                     <div class="save">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <h4>حفظ </h4>
+                     </div>
+                  </div>
+                  <!-- Voting Section -->
+                  <div class="vote">
+                     <i class="fa-solid fa-up-long"></i>
+                     <span>312</span>
+                     <i class="fa-solid fa-down-long"></i>
+                  </div>
+               </div>
+            </div>
+            <!-- Sidebar Section -->
+            <div class="sidebar">
+               <!-- Elakh Plus Section -->
+               <div class="plus">
+                  <h4>الخ بلس</h4>
+                  <p>خدمة مميزة بجودة عالية</p>
+                  <div class="try-btn">
+                     <a href="/html/premium.html">جرب الان</a>
+                  </div>
+               </div>
+               <!-- Join Section -->
+               <div class="join">
+                  <div class="info">
+                     <h4>الرئيسية</h4>
+                     <p>استمتع بالابداع و التواصل من خلال هذه الصفحة المميزة علي موقعنا هنا, يمكنك إنشاء مشاركتك الخاصة بكل سهولة, سواء كانت مقالات, صور, فيديوهات أو محتوي متنوع .</p>
+                  </div>
+                  <div class="btns">
+                     <a href="#">إنشاء مشاركة</a>
+                     <a href="#">إنشاء مجتمع</a>
+                  </div>
+               </div>
+               <!-- Copy Right Section -->
+               <div class="copy-right">
+                  <div class="row-one">
+                     <span>اتفاقية المستخدم</span>
+                     <span>سياسة المحتوي</span>
+                  </div>
+                  <div class="row-two">
+                     <span>سياسة الخصوصية</span>
+                     <span>ميثاق سلوك</span>
+                  </div>
+                  <div class="row-three">
+                     <span>الإنجليزية</span>
+                     <span>الإنجليزية</span>
+                  </div>
+                  <div class="row-four">
+                     <span>الإنجليزية</span>
+                     <span>الإنجليزية</span>
+                  </div>
+                  <div class="row-five">
+                     <span>الإنجليزية</span>
+                     <span>الإنجليزية</span>
+                  </div>
+                  <div class="row-six">
+                     <span>Elakh, Inc. © 2023. All rights reserved.</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Include custom JavaScript file -->
+      <script src="/js/main.js"></script>
+   </body>
+</html>

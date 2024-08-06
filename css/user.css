@@ -1,0 +1,364 @@
+:root {
+    --blue-color: #0BC8FF;
+    --blue-hover-color:#0bb8ea;
+    --navy-alt-color: #213757;
+    --grey-color: #888;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+*:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+}
+.page {
+    background-color: #F5F7FA;
+    min-height: 100vh;
+    direction: rtl;
+}
+/* START HEAD */
+.head {
+    background-color: white;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+   /* Adjust the z-index as needed */
+}
+.head .logo img {
+    width: 30px;
+}
+.head .home {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+   /* border: 1px solid #eee;
+    */
+    border-radius: 6px;
+    padding: 4px 10px;
+    margin-right: 25px;
+}
+.head .home {
+    color: var(--navy-alt-color);
+}
+.head .home .home-icon {
+    margin-left: 5px;
+    font-size: 17px;
+}
+.head .home .arrow-down {
+    cursor: pointer;
+}
+.head .search {
+    position: relative;
+}
+.head .search input {
+    background-color: #eee;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 25px;
+    padding-right: 40px;
+    width: 240px;
+    transition: .3s;
+}
+.head .search input:focus {
+    width: 260px;
+}
+.head .search::before {
+    content: '\f002';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--navy-alt-color);
+    position: absolute;
+    right: 37px;
+    top: 8px;
+    transform: rotate(85deg);
+}
+.head .search input:focus::placeholder {
+    opacity: 0;
+}
+.head .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    color: var(--navy-alt-color);
+}
+.head .icons i {
+    margin-left: 5px;
+    font-size: 21px;
+    transition: .3s;
+    cursor: pointer;
+}
+.head .icons i:hover {
+    transform: translateY(-10px);
+}
+.head .icons i:not(:last-child) {
+    margin-left: 10px;
+}
+.head .advertise {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 25px;
+    transition: .3s;
+    cursor: pointer;
+}
+.head .advertise:hover {
+    background-color: #ddd;
+}
+.head .advertise i {
+    margin-left: 5px;
+    color: var(--navy-alt-color);
+}
+.head .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+.head .profile .profile-img {
+    position: relative;
+}
+.head .profile .profile-img img {
+    width: 33px;
+    height: 33px;
+}
+.head .profile .profile-info {
+    margin-right: 8px;
+}
+.head .profile .profile-info h4 {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.head .profile .profile-info p {
+    margin: 0;
+    font-size: 10px;
+}
+/* END HEAD */
+.widget-author {
+    margin-bottom: 58px;
+}
+.author-card {
+    position: relative;
+    padding-bottom: 48px;
+    background-color: #fff;
+    box-shadow: 0 12px 20px 1px rgba(64, 64, 64, .09);
+    text-align: right;
+   /* Align text to the right */
+}
+.author-card .author-card-cover {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.author-card .author-card-cover::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+   /* Change left to right for RTL */
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0.5;
+}
+.author-card .author-card-cover > .btn {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+   /* Change right to left for RTL */
+    padding: 0 10px;
+}
+.author-card .author-card-profile {
+    display: table;
+    position: relative;
+    margin-top: -22px;
+    padding-left: 15px;
+   /* Change right to left for RTL */
+    padding-bottom: 16px;
+    padding-right: 20px;
+   /* Change left to right for RTL */
+    z-index: 5;
+}
+.author-card .author-card-profile .author-card-avatar, .author-card .author-card-profile .author-card-details {
+    display: table-cell;
+    vertical-align: middle;
+}
+.author-card .author-card-profile .author-card-avatar {
+    width: 85px;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .15);
+    overflow: hidden;
+}
+.author-card .author-card-profile .author-card-avatar > img {
+    display: block;
+    width: 100%;
+}
+.author-card .author-card-profile .author-card-details {
+    padding-top: 20px;
+    padding-right: 15px;
+   /* Change left to right for RTL */
+    text-align: right;
+   /* Align text to the right */
+}
+.author-card .author-card-profile .author-card-name {
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.author-card .author-card-profile .author-card-position {
+    display: block;
+    color: #8c8c8c;
+    font-size: 12px;
+    font-weight: 600;
+}
+.author-card .author-card-info {
+    margin-bottom: 0;
+    padding: 0 25px;
+    font-size: 13px;
+}
+.author-card .author-card-social-bar-wrap {
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+   /* Change left to right for RTL */
+    width: 100%;
+}
+.author-card .author-card-social-bar-wrap .author-card-social-bar {
+    display: table;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 12px 20px 1px rgba(64, 64, 64, .11);
+}
+.btn-style-1.btn-white {
+    background-color: #fff;
+}
+.list-group-item i {
+    display: inline-block;
+    margin-top: -1px;
+    margin-left: 8px;
+   /* Change right to left for RTL */
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+.ml-1, .mx-1 {
+    margin-left: .25rem !important;
+   /* Change right to left for RTL */
+}
+.list-group-item.active:not(.disabled) {
+    border-color: #e7e7e7;
+    background: #fff;
+    color: #4481eb;
+    cursor: default;
+    pointer-events: none;
+}
+.list-group-flush:last-child .list-group-item:last-child {
+    border-bottom: 0;
+}
+.list-group-flush .list-group-item {
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+.list-group-flush .list-group-item {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #4481eb;
+    border-color: #4481eb;
+}
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+a.list-group-item, .list-group-item-action {
+    color: #404040;
+    font-weight: 600;
+}
+.list-group-item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: 1px solid #e7e7e7 !important;
+    border-radius: 0 !important;
+    color: #404040;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: right;
+   /* Align text to the right */
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.125);
+}
+.list-group-item.active:not(.disabled)::before {
+    background-color: #4481eb;
+}
+.list-group-item::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+   /* Change left to right for RTL */
+    width: 3px;
+    height: 100%;
+    background-color: transparent;
+    content: '';
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   /* Align items to the right */
+}
+.form-group label {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+   /* Add space to the right */
+}
+.form-control {
+    text-align: right;
+   /* Align text inside the input to the right */
+}

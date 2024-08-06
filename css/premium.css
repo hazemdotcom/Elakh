@@ -1,0 +1,218 @@
+/* Define custom color variables */
+:root {
+    --blue-color: #0BC8FF;
+    --blue-hover-color: #0bb8ea;
+    --navy-alt-color: #213757;
+    --grey-color: #888;
+}
+
+/* Reset default styles and set box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Set basic body styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Rubik', 'Ubuntu', 'Work Sans', sans-serif; /* Use multiple font fallbacks */
+}
+
+/* Remove focus outline */
+*:focus {
+    outline: none;
+}
+
+/* Remove default link styling */
+a {
+    text-decoration: none;
+}
+
+/* Remove default list styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Custom styling for scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+}
+
+/* Set styles for the page container */
+.page {
+    background-color: #F5F7FA;
+    min-height: 100vh;
+}
+
+/* START HEAD */
+.head {
+    /* Header styles */
+    background-color: white;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure header is above other content */
+    direction: rtl; /* Right-to-left text direction */
+}
+.head .logo img {
+    width: 30px;
+}
+.head .home {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 4px 10px;
+    margin-right: 25px;
+    color: var(--navy-alt-color);
+}
+.head .home .home-icon {
+    margin-left: 5px;
+    font-size: 17px;
+}
+.head .home .arrow-down {
+    cursor: pointer;
+}
+.head .search {
+    position: relative;
+}
+.head .search input {
+    background-color: #eee;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 25px;
+    padding-right: 40px;
+    width: 240px;
+    transition: .3s;
+}
+.head .search input:focus {
+    width: 260px;
+}
+.head .search::before {
+    content: '\f002'; /* Unicode for search icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--navy-alt-color);
+    position: absolute;
+    right: 37px;
+    top: 8px;
+    transform: rotate(85deg);
+}
+.head .search input:focus::placeholder {
+    opacity: 0;
+}
+.head .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    color: var(--navy-alt-color);
+}
+.head .icons i {
+    margin-left: 5px;
+    font-size: 21px;
+    transition: .3s;
+    cursor: pointer;
+}
+.head .icons i:hover {
+    transform: translateY(-10px);
+}
+.head .icons i:not(:last-child) {
+    margin-left: 10px;
+}
+.head .advertise {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 25px;
+    transition: .3s;
+    cursor: pointer;
+}
+.head .advertise:hover {
+    background-color: #ddd;
+}
+.head .advertise i {
+    margin-left: 5px;
+    color: var(--navy-alt-color);
+}
+.head .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+.head .profile .profile-img {
+    position: relative;
+}
+.head .profile .profile-img img {
+    width: 33px;
+    height: 33px;
+}
+.head .profile .profile-info {
+    margin-right: 8px;
+}
+.head .profile .profile-info h4 {
+    margin: 0;
+    color: #213757; /* Adjusted color for better contrast */
+    font-size: 15px; /* Increased font size for better readability */
+    margin-left: 10px;
+}
+.head .profile .profile-info p {
+    margin: 0;
+    font-size: 10px;
+    color: #213757; /* Adjusted color for better contrast */
+    text-decoration: none;
+}
+/* END HEAD */
+
+/* Styles for card */
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 1rem;
+}
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.5rem 1.5rem;
+}
+
+/* Custom styles for the alert message */
+.alert {
+    padding: 20px;
+    background-color: #07dd76;
+    color: white;
+}
+/* Close button for the alert */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* When hovering over the close button */
+.closebtn:hover {
+    color: black;
+}

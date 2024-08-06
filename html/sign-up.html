@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn&SignUp</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="/css/sign-up.css" />
+    <!-- Link to Font Awesome for icons -->
+    <script
+       src="https://kit.fontawesome.com/64d58efce2.js"
+       crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <!-- Container for the sign-up form -->
+    <div class="container">
+        <!-- Form element with method "post" and action "signup.php" -->
+        <form method="post" action="signup.php" class="sign-up-form">
+            <!-- Input field for username -->
+            <div class="input-field">
+                <!-- Icon for username -->
+                <i class="fas fa-user"></i>
+                <!-- Input element for username with placeholder text and "required" attribute -->
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <!-- Input field for email -->
+            <div class="input-field">
+                <!-- Icon for email -->
+                <i class="fas fa-envelope"></i>
+                <!-- Input element for email with placeholder text and "required" attribute -->
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <!-- Input field for password -->
+            <div class="input-field">
+                <!-- Icon for password -->
+                <i class="fas fa-lock"></i>
+                <!-- Input element for password with placeholder text and "required" attribute -->
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <!-- Button for submitting the form -->
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
